@@ -51,7 +51,7 @@ class SeatInfo extends Component {
             <tbody>{this.renderDSGheDangDat()}</tbody>
           </table>
           <button className="special-button mr-7" onClick={this.handleCheckout}>
-            Checkout
+            Thanh Toán
           </button>
         </div>
       </>

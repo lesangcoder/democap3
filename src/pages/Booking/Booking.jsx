@@ -17,38 +17,38 @@ class Booking extends Component {
 
   render() {
     return (
-      <div className="py-12 bg-overlay">
-        <div className="flex w-full justify-evenly">
-          <div className="w-3/4 text-center ">
-            <h3 className="m-0 p-0"> ĐẶT VÉ XEM PHIM</h3>
-            <p>
+      <div className="py-20">
+        <div className="flex w-full container">
+          <div className="pl-64 w-3/4">
+            <h3 className="m-0 p-0 text-3xl font-bold text-center"> ĐẶT VÉ XEM PHIM</h3>
+            <p className="text-center">
               Vui Lòng chọn ghế theo sơ đồ sau:
             </p>
             <br />
             <br />
-            <h5 className="pt-0 ml-10">MÀN HÌNH</h5>
-            <div className="mt-3 screen"></div>
-            <div className="mt-2 ml-5 text-left fs-ghe">
+            <h5 className="text-center text-3xl font-bold">MÀN HÌNH</h5>
+            <div className="screen"></div>
+            <div className="text-left fs-ghe">
               {this.renderSeatLayout()}
             </div>
-            <div className="mt-3 text-left ps-12">
+            <div className="mt-3 text-left">
               <ul className="mt-5 confirmSeat">
                 <li>
-                  <button className="gheDuocChon" id="resSeat"></button>
-                  <span className="fs-ghe">Ghế đã chọn</span>
+                  <button className="gheDuocChon align-middle" id="resSeat"></button>
+                  <span>Ghế đã chọn</span>
                 </li>
                 <li>
-                  <button className="gheDangChon bg-blue-500" id="seleSeat"></button>
-                  <span className="fs-ghe">Ghế bạn chọn</span>
+                  <button className="gheDangChon align-middle bg-blue-500" id="seleSeat"></button>
+                  <span>Ghế bạn chọn</span>
                 </li>
                 <li>
-                  <button className="ml-0 ghe" id="empSeat"></button>
-                  <span className="fs-ghe">Ghế trống </span>
+                  <button className="gheTrong align-middle" id="empSeat"></button>
+                  <span>Ghế trống </span>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="w-1/4">
+          <div className="pt-38 w-1/4 text-left">
             <SeatInfo />
           </div>
         </div>
